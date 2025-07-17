@@ -32,7 +32,7 @@ const Skills = () => {
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
           animationSpeed={3}
           showBorder={false}
-          className="text-5xl font-semibold text-white "
+          className="text-4xl text-center md:text-5xl font-semibold text-white"
         >
           What I Use to Build Stuff
         </GradientText>
