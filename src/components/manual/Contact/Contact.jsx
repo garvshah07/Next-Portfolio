@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contect">
       <div className="py-20 flex justify-center items-center flex-col">
         <h4 className="text-5xl text-center font-semibold text-white ">
           Let's connect to innovate

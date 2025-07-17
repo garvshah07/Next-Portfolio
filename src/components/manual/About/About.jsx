@@ -5,7 +5,7 @@ import ScrollVelocity from "@/block/TextAnimations/ScrollVelocity/ScrollVelocity
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <div>
         <ScrollVelocity
           texts={["ABOUT ME", "ABOUT ME"]}

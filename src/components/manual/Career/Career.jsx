@@ -11,7 +11,7 @@ import { MdOutlineWork, MdOutlineSchool } from "react-icons/md";
 
 const Career = () => {
   return (
-    <section>
+    <section id="career">
       <div className="py-20">
         <h4 className="text-5xl font-semibold text-white text-center">
           Career

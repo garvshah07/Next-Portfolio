@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const navLinks = [
   { id: 1, name: "Home", href: "/" },
-  { id: 2, name: "About", href: "/about" },
-  { id: 3, name: "Projects", href: "/projects" },
-  { id: 4, name: "Contact", href: "/contact" },
+  { id: 2, name: "About", href: "#about" },
+  { id: 3, name: "Projects", href: "#projects" },
+  { id: 4, name: "Contact", href: "#contect" },
 ];
 
 const Navbar = () => {
@@ -17,7 +18,9 @@ const Navbar = () => {
           {navLinks.map((link) => {
             return (
               <ul key={link.id}>
-                <li className="text-white ">{link.name}</li>
+                <li className="text-white cursor-pointer">
+                  <Link href={link.href}>{link.name}</Link>
+                </li>
               </ul>
             );
           })}

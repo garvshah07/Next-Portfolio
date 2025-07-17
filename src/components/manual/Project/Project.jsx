@@ -44,7 +44,7 @@ const cardData = [
 
 const Project = () => {
   return (
-    <section>
+    <section id="projects">
       <div className="pt-20">
         <h4 className="text-5xl text-center font-semibold text-white ">
           Project
