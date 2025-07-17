@@ -54,7 +54,7 @@ const Contact = () => {
               id="message"
               type="email"
               required
-              className="resize-none outline-none bg-white text-black p-2 border-none rounded-md mb-4 min-w-[195px] md:min-w-[400px]"
+              className="resize-none outline-none bg-white text-black p-2 border-none rounded-md mb-4 min-w-full md:min-w-[400px]"
             ></textarea>
           </div>
 
