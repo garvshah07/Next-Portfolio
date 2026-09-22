@@ -1,10 +1,11 @@
-import About from "@/components/manual/About/About";
-import Hero from "@/components/manual/Hero/Hero";
-import Skills from "@/components/manual/Skills/Skills";
-import Career from "@/components/manual/Career/Career";
-import Project from "@/components/manual/Project/Project";
-import Contact from "@/components/manual/Contact/Contact";
-import Footer from "@/components/manual/Footer/Footer";
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
+import FAQ from '@/components/FAQ';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
-      <Career />
-      <Project />
+      <Experience />
+      <Projects />
+      <FAQ />
       <Contact />
       <Footer />
     </>
