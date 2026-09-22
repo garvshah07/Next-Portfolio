@@ -4,60 +4,112 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiArrowUpRight, FiGithub, FiFolder, FiExternalLink } from 'react-icons/fi';
+import { FiArrowUpRight, FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projectsData = [
   {
     id: 1,
-    title: 'Next.js Developer Portfolio (2026)',
+    title: 'AgreeWise — AI Policy Summarizer',
+    category: 'ai',
+    categoryLabel: 'AI Extension',
+    featured: true,
+    description:
+      'AI-powered browser extension that scans, extracts, and summarizes complex Terms of Service and Privacy Policies before users accept them, powered by Groq LLM SDK and PDF.js.',
+    tags: ['React', 'Groq SDK (LLM)', 'PDF.js', 'Vite', 'Browser Extension'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://github.com/garvshah07/Agreewise',
+    githubUrl: 'https://github.com/garvshah07/Agreewise',
+  },
+  {
+    id: 2,
+    title: 'PixelCurl Web Platform',
+    category: 'frontend',
+    categoryLabel: 'Frontend / UI',
+    featured: true,
+    description:
+      'Modern web platform engineered with Next.js, TypeScript, Radix UI primitives, Framer Motion animations, and Tailwind CSS for interactive digital experiences.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Framer Motion'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://pixelcurl.vercel.app',
+    githubUrl: 'https://github.com/garvshah07/pixelcurl',
+  },
+  {
+    id: 3,
+    title: 'AI Customer Message Triage',
+    category: 'ai',
+    categoryLabel: 'AI / Tool',
+    featured: false,
+    description:
+      'Support routing and triage application leveraging AI models to automatically classify, prioritize, and route incoming customer tickets for accelerated resolution.',
+    tags: ['React', 'JavaScript', 'AI Classification', 'Vercel Deployment'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://ai-customer-message-triage.vercel.app',
+    githubUrl: 'https://github.com/garvshah07/AI-Customer-Message-Triage',
+  },
+  {
+    id: 4,
+    title: 'BookBridge — Book Exchange Platform',
+    category: 'fullstack',
+    categoryLabel: 'Capstone',
+    featured: false,
+    description:
+      'Capstone web application connecting book enthusiasts to discover, catalog, review, and exchange literature with a responsive, modern UI.',
+    tags: ['React', 'JavaScript', 'State Management', 'Responsive UI', 'Vercel'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://book-bridge-sage.vercel.app',
+    githubUrl: 'https://github.com/garvshah07/BookBridge',
+  },
+  {
+    id: 5,
+    title: 'Modern E-Commerce Storefront',
+    category: 'frontend',
+    categoryLabel: 'Frontend',
+    featured: false,
+    description:
+      'Online shopping storefront featuring dynamic product catalog browsing, responsive grid layouts, category filtering, and shopping cart state management.',
+    tags: ['React', 'JavaScript', 'CSS Grid', 'Shopping Cart', 'Vercel'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://ecommerce-nine-beige-65.vercel.app',
+    githubUrl: 'https://github.com/garvshah07/ecommerce',
+  },
+  {
+    id: 6,
+    title: 'REST Countries World Explorer',
+    category: 'frontend',
+    categoryLabel: 'API / Frontend',
+    featured: false,
+    description:
+      'Interactive world geography exploration web app consuming the REST Countries API with real-time country search, region filters, border links, and dark mode.',
+    tags: ['React', 'Vite', 'REST API Integration', 'Responsive Design'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://rest-country-orcin-five.vercel.app',
+    githubUrl: 'https://github.com/garvshah07/rest-country',
+  },
+  {
+    id: 7,
+    title: 'Film Discovery & Media App',
+    category: 'frontend',
+    categoryLabel: 'GraphQL',
+    featured: false,
+    description:
+      'Media exploration application built with React, TypeScript, Apollo Client, and GraphQL for declarative data querying and type-safe state handling.',
+    tags: ['React', 'TypeScript', 'GraphQL', 'Apollo Client', 'Vite'],
+    imageUrl: '/images/card-project/card.jpg',
+    demoUrl: 'https://github.com/garvshah07/film-app',
+    githubUrl: 'https://github.com/garvshah07/film-app',
+  },
+  {
+    id: 8,
+    title: 'Next.js Developer Portfolio (2026 Edition)',
     category: 'frontend',
     categoryLabel: 'Frontend',
     featured: true,
     description:
-      'Personal developer portfolio engineered with Next.js 15 App Router, React 19, Tailwind CSS, and Framer Motion. Features dark minimalist aesthetics, tactile micro-interactions, and 100% authentic personal background.',
-    tags: ['Next.js 15', 'React 19', 'Tailwind CSS', 'Framer Motion'],
+      'Personal developer portfolio engineered with Next.js 15 App Router, React 19, Tailwind CSS, Framer Motion, and comprehensive SEO / GEO / AEO schema optimization.',
+    tags: ['Next.js 15', 'React 19', 'Tailwind CSS', 'Framer Motion', 'SEO/GEO'],
     imageUrl: '/images/card-project/card.jpg',
-    demoUrl: '#home',
+    demoUrl: '#hero',
     githubUrl: 'https://github.com/garvshah07/Next-Portfolio',
-  },
-  {
-    id: 2,
-    title: 'React Interactive Web Application',
-    category: 'frontend',
-    categoryLabel: 'Frontend',
-    featured: false,
-    description:
-      'Modular, responsive web interface built with React.js. Focused on predictable client-side state management, custom hooks, reusable design patterns, and cross-browser responsiveness.',
-    tags: ['React.js', 'JavaScript (ES6+)', 'Tailwind CSS', 'Component UI'],
-    imageUrl: '/images/card-project/card.jpg',
-    demoUrl: 'https://github.com/garvshah07',
-    githubUrl: 'https://github.com/garvshah07',
-  },
-  {
-    id: 3,
-    title: 'Full-Stack MERN Application',
-    category: 'fullstack',
-    categoryLabel: 'Full Stack',
-    featured: false,
-    description:
-      'End-to-end web application combining a React frontend with a Node.js & Express REST API backend and MongoDB document storage for dynamic data persistence.',
-    tags: ['React.js', 'Node.js', 'Express', 'MongoDB', 'REST API'],
-    imageUrl: '/images/card-project/card.jpg',
-    demoUrl: 'https://github.com/garvshah07',
-    githubUrl: 'https://github.com/garvshah07',
-  },
-  {
-    id: 4,
-    title: 'Responsive UI Design & Interaction Lab',
-    category: 'ui',
-    categoryLabel: 'UI / UX',
-    featured: false,
-    description:
-      'Collection of tactile, accessible frontend interface components and prototypes. Includes dark mode transitions, fluid typography, and mobile-first CSS grid systems.',
-    tags: ['HTML5', 'Modern CSS', 'Responsive Grid', 'Micro-interactions'],
-    imageUrl: '/images/card-project/card.jpg',
-    demoUrl: 'https://github.com/garvshah07',
-    githubUrl: 'https://github.com/garvshah07',
   },
 ];
 
@@ -78,10 +130,10 @@ export default function Projects() {
           <span>Selected Work</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-          Featured projects & applications.
+          Real projects from my GitHub.
         </h2>
         <p className="text-base text-neutral-400 max-w-2xl">
-          Real projects built with modern tooling, clean architecture, and responsive user interfaces.
+          A showcase of real applications, AI extensions, and web tools I have built and published on GitHub.
         </p>
       </div>
 
@@ -89,9 +141,9 @@ export default function Projects() {
       <div className="flex flex-wrap items-center gap-2 mb-10 border-b border-white/[0.08] pb-4">
         {[
           { id: 'all', label: 'All Projects' },
-          { id: 'frontend', label: 'Frontend' },
-          { id: 'fullstack', label: 'Full Stack' },
-          { id: 'ui', label: 'UI / UX' },
+          { id: 'ai', label: 'AI & Extensions' },
+          { id: 'frontend', label: 'Frontend & Web' },
+          { id: 'fullstack', label: 'Full Stack & Capstone' },
         ].map((tab) => (
           <button
             key={tab.id}
@@ -173,7 +225,7 @@ export default function Projects() {
                       href={project.demoUrl}
                       target={project.demoUrl.startsWith('http') ? '_blank' : '_self'}
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white text-neutral-950 hover:bg-neutral-200 active:scale-[0.98] transition-all"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white text-neutral-950 hover:bg-neutral-200 active:scale-[0.98] transition-all cursor-pointer"
                     >
                       <span>View Live</span>
                       <FiArrowUpRight className="text-sm" />
@@ -183,7 +235,7 @@ export default function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-medium bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-neutral-300 hover:text-white transition-all"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-medium bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-neutral-300 hover:text-white transition-all cursor-pointer"
                     >
                       <FiGithub className="text-sm" />
                       <span>Source Code</span>
