@@ -59,7 +59,7 @@ const Navbar = () => {
         >
           <div className="relative w-6 h-6 rounded-lg overflow-hidden border border-white/20 group-hover:border-sky-400/60 transition-colors shadow-sm flex items-center justify-center bg-black/40">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/icon.svg" alt="GS Logo" className="w-full h-full object-cover" />
+            <img src="/icon.svg" alt="GS Logo" width="24" height="24" className="w-full h-full object-cover" />
           </div>
           <span className="font-semibold text-xs tracking-wider uppercase text-neutral-200 group-hover:text-white transition-colors">
             Garv Shah

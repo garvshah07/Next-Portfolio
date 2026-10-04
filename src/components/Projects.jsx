@@ -30,7 +30,7 @@ const projectsData = [
       'Modern web platform engineered with Next.js, TypeScript, Radix UI primitives, Framer Motion animations, and Tailwind CSS for interactive digital experiences.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Framer Motion'],
     imageUrl: '/images/card-project/card.jpg',
-    demoUrl: 'https://pixelcurl.vercel.app',
+    demoUrl: 'https://github.com/garvshah07/pixelcurl',
     githubUrl: 'https://github.com/garvshah07/pixelcurl',
   },
   {
@@ -69,7 +69,7 @@ const projectsData = [
       'Online shopping storefront featuring dynamic product catalog browsing, responsive grid layouts, category filtering, and shopping cart state management.',
     tags: ['React', 'JavaScript', 'CSS Grid', 'Shopping Cart', 'Vercel'],
     imageUrl: '/images/card-project/card.jpg',
-    demoUrl: 'https://ecommerce-nine-beige-65.vercel.app',
+    demoUrl: 'https://github.com/garvshah07/ecommerce',
     githubUrl: 'https://github.com/garvshah07/ecommerce',
   },
   {
@@ -82,7 +82,7 @@ const projectsData = [
       'Interactive world geography exploration web app consuming the REST Countries API with real-time country search, region filters, border links, and dark mode.',
     tags: ['React', 'Vite', 'REST API Integration', 'Responsive Design'],
     imageUrl: '/images/card-project/card.jpg',
-    demoUrl: 'https://rest-country-orcin-five.vercel.app',
+    demoUrl: 'https://github.com/garvshah07/rest-country',
     githubUrl: 'https://github.com/garvshah07/rest-country',
   },
   {
