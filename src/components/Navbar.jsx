@@ -55,9 +55,12 @@ const Navbar = () => {
         {/* Clean Logo */}
         <Link
           href="#hero"
-          className="flex items-center gap-2 group text-white font-medium text-sm tracking-tight pr-1"
+          className="flex items-center gap-2.5 group text-white font-medium text-sm tracking-tight pr-1"
         >
-          <span className="h-2 w-2 rounded-full bg-emerald-400" />
+          <div className="relative w-6 h-6 rounded-lg overflow-hidden border border-white/20 group-hover:border-sky-400/60 transition-colors shadow-sm flex items-center justify-center bg-black/40">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/icon.svg" alt="GS Logo" className="w-full h-full object-cover" />
+          </div>
           <span className="font-semibold text-xs tracking-wider uppercase text-neutral-200 group-hover:text-white transition-colors">
             Garv Shah
           </span>

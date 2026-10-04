@@ -28,7 +28,7 @@ export default function Footer() {
               Garv Shah<span className="text-sky-400">.</span>
             </div>
             <p className="text-xs text-neutral-400 font-mono">
-              Frontend & Web Developer &bull; Ahmedabad, Gujarat, India
+              MERN Stack &amp; Frontend Developer &bull; Ahmedabad, Gujarat, India
             </p>
           </div>
 

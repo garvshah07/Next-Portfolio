@@ -66,9 +66,9 @@ export default function About() {
           <div className="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.08] space-y-4 backdrop-blur-sm">
             <h3 className="text-xl font-semibold text-white">My Journey into Web Development</h3>
             <p>
-              I am <strong className="text-white font-medium">Garv Shah</strong>, a frontend developer based in{' '}
-              <span className="text-sky-400">Ahmedabad, Gujarat</span>. Over the past 9+ months of hands-on development,
-              I have channeled my energy into mastering the modern JavaScript and React ecosystem.
+              I am <strong className="text-white font-medium">Garv Shah</strong>, a MERN Stack &amp; Frontend developer based in{' '}
+              <span className="text-sky-400">Ahmedabad, Gujarat</span>. Over the past 9+ months of hands-on software development,
+              I have channeled my energy into mastering full-stack MERN (MongoDB, Express.js, React.js, Node.js), Next.js, and the modern JavaScript ecosystem.
             </p>
             <p>
               My academic background in computer applications and information technology (BCA at Silver Oak University and

@@ -29,7 +29,7 @@ export default function Contact() {
           Let&apos;s build something great together.
         </h2>
         <p className="text-base text-neutral-400 max-w-2xl">
-          Whether you have an exciting junior frontend opportunity, freelance project, or simply want to connect, my inbox is always open.
+          Whether you have an exciting junior MERN stack or frontend opportunity, freelance project, or simply want to connect, my inbox is always open.
         </p>
       </div>
 
@@ -44,11 +44,11 @@ export default function Contact() {
             </div>
 
             <h3 className="text-lg font-bold text-white">
-              Open for Frontend & Web Roles
+              Open for MERN Stack &amp; Frontend Roles
             </h3>
 
             <p className="text-sm text-neutral-300 leading-relaxed">
-              I am actively seeking junior frontend developer, web developer, or React engineer positions. I am ready to relocate or work remotely.
+              I am actively seeking junior MERN stack developer, frontend developer, or web engineer positions. Ready to relocate or contribute remotely worldwide.
             </p>
 
             {/* 1-Click Copy Box */}

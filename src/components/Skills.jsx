@@ -22,7 +22,7 @@ import { FiLayers, FiCode, FiDatabase, FiTool } from 'react-icons/fi';
 const categories = [
   { id: 'all', label: 'All Technologies' },
   { id: 'frontend', label: 'Frontend Core' },
-  { id: 'backend', label: 'Backend & Data' },
+  { id: 'backend', label: 'MERN & Backend' },
   { id: 'tools', label: 'Tools & Workflow' },
 ];
 
@@ -44,7 +44,7 @@ const skills = [
     level: 'Component Architecture',
     description: 'Hooks, state management, component lifecycle, reusable UI building.',
     color: 'hover:text-sky-400',
-    badge: 'Core',
+    badge: 'Core MERN',
   },
   {
     name: 'JavaScript (ES6+)',
@@ -83,33 +83,33 @@ const skills = [
     badge: 'Core',
   },
 
-  // Backend & Data
+  // Backend & Data (MERN)
   {
     name: 'Node.js',
     category: 'backend',
     icon: SiNodedotjs,
     level: 'Runtime Environment',
-    description: 'JavaScript on the server, asynchronous event loop, npm ecosystem.',
+    description: 'Server-side JavaScript runtime, RESTful API architecture, npm ecosystem, asynchronous event loop.',
     color: 'hover:text-emerald-500',
-    badge: 'Working Knowledge',
+    badge: 'Core MERN',
   },
   {
     name: 'Express.js',
     category: 'backend',
     icon: SiExpress,
     level: 'Server Framework',
-    description: 'RESTful API routing, middleware integration, JSON request handling.',
+    description: 'RESTful API routing, middleware pipeline, request validation, backend architecture.',
     color: 'hover:text-neutral-200',
-    badge: 'Working Knowledge',
+    badge: 'Core MERN',
   },
   {
     name: 'MongoDB',
     category: 'backend',
     icon: SiMongodb,
     level: 'NoSQL Database',
-    description: 'Document-oriented database schemas, CRUD operations, Mongoose models.',
+    description: 'Document-oriented database schemas, CRUD operations, aggregation pipelines, Mongoose models.',
     color: 'hover:text-green-500',
-    badge: 'Academic & Projects',
+    badge: 'Core MERN',
   },
 
   // Tools & Workflow

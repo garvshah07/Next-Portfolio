@@ -6,7 +6,7 @@ import { FiArrowDown, FiMail, FiGithub, FiLinkedin, FiInstagram, FiCode, FiMapPi
 
 const quickStats = [
   { label: 'Hands-on Experience', value: '9+ Months' },
-  { label: 'Core Specialization', value: 'React & Next.js' },
+  { label: 'Core Specialization', value: 'MERN & Next.js' },
   { label: 'Location', value: 'Ahmedabad, IN' },
   { label: 'Availability', value: 'Open for Roles' },
 ];
@@ -43,7 +43,7 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
             </span>
-            <span>Available for junior developer & frontend roles</span>
+            <span>Available for MERN &amp; frontend developer roles</span>
           </div>
 
           {/* Heading */}
@@ -55,17 +55,21 @@ export default function Hero() {
               Garv Shah<span className="text-sky-400">.</span>
             </h1>
             <p className="text-xl sm:text-2xl text-neutral-300 font-medium pt-1">
-              Frontend & Web Developer crafting fast, human-centered digital experiences.
+              MERN Stack &amp; Frontend Developer crafting fast, human-centered digital experiences.
             </p>
           </div>
 
           {/* Narrative description */}
           <p className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-xl font-normal">
-            I build responsive, clean, and accessible web interfaces using{' '}
-            <span className="text-neutral-200 font-medium">React.js</span>,{' '}
+            I build responsive, full-stack, and high-performance web applications using{' '}
+            <span className="text-neutral-200 font-medium">MERN Stack</span> (
+            <span className="text-neutral-200 font-medium">MongoDB</span>,{' '}
+            <span className="text-neutral-200 font-medium">Express</span>,{' '}
+            <span className="text-neutral-200 font-medium">React</span>,{' '}
+            <span className="text-neutral-200 font-medium">Node.js</span>),{' '}
             <span className="text-neutral-200 font-medium">Next.js</span>, and{' '}
-            <span className="text-neutral-200 font-medium">Tailwind CSS</span>. With 9 months of hands-on
-            development experience, I care about code readability, snappy performance, and thoughtful UI polish.
+            <span className="text-neutral-200 font-medium">Tailwind CSS</span>. With 9+ months of hands-on
+            software development experience, I care about clean architecture, snappy performance, and thoughtful UI polish.
           </p>
 
           {/* Call to Actions */}
@@ -164,7 +168,7 @@ export default function Hero() {
               </p>
               <p className="pl-4">
                 <span className="text-neutral-400">role:</span>{' '}
-                <span className="text-emerald-300">&apos;Frontend Developer&apos;</span>,
+                <span className="text-emerald-300">&apos;MERN &amp; Frontend Developer&apos;</span>,
               </p>
               <p className="pl-4">
                 <span className="text-neutral-400">experience:</span>{' '}
@@ -180,15 +184,17 @@ export default function Hero() {
               </p>
               <p className="pl-4">
                 <span className="text-neutral-400">stack:</span> [
-                <span className="text-sky-300">&apos;Next.js&apos;</span>,{' '}
+                <span className="text-sky-300">&apos;MongoDB&apos;</span>,{' '}
+                <span className="text-sky-300">&apos;Express&apos;</span>,{' '}
                 <span className="text-sky-300">&apos;React&apos;</span>,{' '}
-                <span className="text-sky-300">&apos;Tailwind&apos;</span>,{' '}
-                <span className="text-sky-300">&apos;JavaScript&apos;</span>
+                <span className="text-sky-300">&apos;Node.js&apos;</span>,{' '}
+                <span className="text-sky-300">&apos;Next.js&apos;</span>,{' '}
+                <span className="text-sky-300">&apos;Tailwind&apos;</span>
                 ],
               </p>
               <p className="pl-4">
                 <span className="text-neutral-400">mindset:</span>{' '}
-                <span className="text-emerald-300">&apos;Clean code, fast sites, continuous learning&apos;</span>
+                <span className="text-emerald-300">&apos;Clean code, full-stack craft, continuous learning&apos;</span>
               </p>
               <p>{'};'}</p>
             </div>

@@ -9,12 +9,13 @@ const faqItems = [
     id: 'who-is-garv',
     question: 'Who is Garv Shah and what does he specialize in?',
     shortAnswer:
-      'Garv Shah is a Frontend and Web Developer based in Ahmedabad, Gujarat, India, with 9+ months of hands-on software development experience.',
+      'Garv Shah is a MERN Stack and Frontend Developer based in Ahmedabad, Gujarat, India, with 9+ months of hands-on software development experience.',
     detailedAnswer:
-      'Garv specializes in building fast, responsive, and accessible web interfaces using the modern React ecosystem — including Next.js 15, React 19, JavaScript (ES6+), and Tailwind CSS. He emphasizes clean component architecture, reliable state management, and tactile user experience design.',
+      'Garv specializes in building fast, scalable, and responsive web applications using both full-stack MERN (MongoDB, Express.js, React.js, Node.js) and the modern Next.js ecosystem. He emphasizes clean component architecture, reliable state management, and tactile user experience design.',
     highlights: [
+      'Full-Stack MERN (MongoDB, Express, React, Node.js)',
       'Specialized in Next.js 15 & React 19',
-      '9+ months of hands-on web development experience',
+      '9+ months of hands-on software development experience',
       'Based in Ahmedabad, Gujarat, India',
     ],
   },
@@ -22,13 +23,13 @@ const faqItems = [
     id: 'tech-stack',
     question: "What is Garv Shah's core technical stack?",
     shortAnswer:
-      'Garv’s primary day-to-day stack consists of Next.js, React.js, Tailwind CSS, and modern JavaScript (ES6+).',
+      'Garv’s primary stack consists of the MERN Stack (MongoDB, Express.js, React.js, Node.js), Next.js 15, Tailwind CSS, and modern JavaScript (ES6+).',
     detailedAnswer:
-      'Beyond frontend engineering, Garv has working foundational knowledge of backend and database technologies including Node.js, Express.js, and MongoDB. He utilizes Git and GitHub for version control, Figma for design translation, and Vercel for continuous deployment.',
+      'Garv builds complete web solutions from database modeling in MongoDB and REST API endpoints in Express/Node to interactive frontend interfaces with React, Next.js, and Tailwind CSS. He utilizes Git and GitHub for version control, Figma for design translation, and Vercel for continuous deployment.',
     highlights: [
-      'Frontend: React, Next.js, Tailwind CSS, HTML5, CSS3',
-      'Backend & Data: Node.js, Express.js, MongoDB',
-      'Tools: Git, GitHub, VS Code, Vercel, Figma',
+      'MERN Stack: MongoDB, Express.js, React.js, Node.js',
+      'Frontend: Next.js 15, Tailwind CSS, HTML5, CSS3, JavaScript',
+      'Tools: Git, GitHub, VS Code, Vercel, RESTful APIs, Figma',
     ],
   },
   {
@@ -47,9 +48,9 @@ const faqItems = [
   },
   {
     id: 'availability',
-    question: 'Is Garv Shah available for frontend developer roles and hiring?',
+    question: 'Is Garv Shah available for MERN stack and frontend developer roles?',
     shortAnswer:
-      'Yes, Garv Shah is actively open and available for junior frontend developer, web developer, and React engineer roles.',
+      'Yes, Garv Shah is actively open and available for junior MERN stack developer, frontend developer, and web developer roles.',
     detailedAnswer:
       'He is available for full-time employment, contract roles, and select freelance web development projects. Garv is ready to contribute remotely to distributed teams worldwide, or work on-site in Ahmedabad with openness to relocation across India.',
     highlights: [
