@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import JsonLd from "@/components/JsonLd";
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,6 +22,9 @@ export const metadata = {
     "Official portfolio of Garv Shah — Frontend & Web Developer based in Ahmedabad, Gujarat, India. Specializing in React.js, Next.js 15, Tailwind CSS, and modern JavaScript with 9+ months of hands-on experience.",
   keywords: [
     "Garv Shah",
+"Shah Garv",
+"GarvShah",
+"ShahGarv",
     "Garv Shah Developer",
     "Garv Shah Portfolio",
     "Frontend Developer Ahmedabad",
@@ -95,6 +99,21 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark scroll-smooth">
       <head>
         <JsonLd />
+{/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-5S06JC2MD9`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-5S06JC2MD9');
+          `}
+        </Script>
       </head>
       <body
         className={`${poppins.variable} font-sans bg-[#090a0f] text-neutral-200 antialiased min-h-screen relative selection:bg-sky-500/20 selection:text-sky-200`}
