@@ -99,9 +99,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark scroll-smooth">
       <head>
         <JsonLd />
-{/* Google Analytics */}
+  {/* Google Analytics */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-5S06JC2MD9`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
           strategy="afterInteractive"
         />
 
@@ -111,9 +111,10 @@ export default function RootLayout({ children }) {
             function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-5S06JC2MD9');
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
           `}
         </Script>
+
       </head>
       <body
         className={`${poppins.variable} font-sans bg-[#090a0f] text-neutral-200 antialiased min-h-screen relative selection:bg-sky-500/20 selection:text-sky-200`}
