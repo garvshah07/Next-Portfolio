@@ -20,17 +20,28 @@ const milestones = [
   {
     id: 2,
     type: 'work',
-    role: 'Junior Software Developer',
-    organization: 'Web & Software Solutions',
+    role: 'Junior MERN Stack Developer',
+    organization: 'Syncabout Business Solutions',
     location: 'Ahmedabad, Gujarat, IN',
-    period: 'November 2024 - July 2025',
+    period: 'May 2025 - July 2025',
+    status: 'Completed',
+    description: 'Worked as a Junior MERN Stack Developer, contributing to the development and maintenance of web applications using React.js, Next.js, Node.js, Express.js, and MongoDB. Assisted in building responsive user interfaces, developing RESTful APIs, integrating frontend and backend services, and managing database operations while collaborating with the development team to deliver efficient and scalable web solutions.',
+    skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB'],
+  },
+  {
+    id: 3,
+    type: 'work',
+    role: 'Frontend Developer Intern',
+    organization: 'Syncabout Business Solutions',
+    location: 'Ahmedabad, Gujarat, IN',
+    period: 'November 2024 - April 2025',
     status: 'Completed',
     description:
       'Engineered responsive, accessible frontend user interfaces using React.js and modern CSS. Collaborated on component libraries, refactored legacy layouts, and improved web performance across mobile and desktop devices.',
     skills: ['React.js', 'Responsive UI', 'Component Architecture', 'Modern CSS'],
   },
   {
-    id: 3,
+    id: 4,
     type: 'education',
     role: 'Bachelor of Computer Applications (BCA)',
     organization: 'Silver Oak University',
@@ -42,7 +53,7 @@ const milestones = [
     skills: ['BCA', 'Computer Science', 'Web Development', 'OOP', 'SQL'],
   },
   {
-    id: 4,
+    id: 5,
     type: 'work',
     role: 'React Developer Intern',
     organization: 'Codage Habitation',
@@ -89,11 +100,10 @@ export default function Experience() {
           <button
             key={tab.id}
             onClick={() => setFilter(tab.id)}
-            className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
-              filter === tab.id
-                ? 'bg-white text-neutral-950 font-semibold shadow-md shadow-white/5'
-                : 'text-neutral-400 hover:text-white hover:bg-white/[0.04]'
-            }`}
+            className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${filter === tab.id
+              ? 'bg-white text-neutral-950 font-semibold shadow-md shadow-white/5'
+              : 'text-neutral-400 hover:text-white hover:bg-white/[0.04]'
+              }`}
           >
             {tab.label}
           </button>
@@ -131,11 +141,10 @@ export default function Experience() {
                     <span>{item.period}</span>
                   </div>
                   <span
-                    className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full border ${
-                      item.status === 'Completed' || item.status === 'Graduated'
-                        ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20'
-                        : 'bg-sky-500/10 text-sky-400 border-sky-500/20'
-                    }`}
+                    className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full border ${item.status === 'Completed' || item.status === 'Graduated'
+                      ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20'
+                      : 'bg-sky-500/10 text-sky-400 border-sky-500/20'
+                      }`}
                   >
                     {item.status}
                   </span>
