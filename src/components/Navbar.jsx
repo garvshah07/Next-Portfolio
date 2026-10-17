@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 const navLinks = [
@@ -58,8 +59,14 @@ const Navbar = () => {
           className="flex items-center gap-2.5 group text-white font-medium text-sm tracking-tight pr-1"
         >
           <div className="relative w-6 h-6 rounded-lg overflow-hidden border border-white/20 group-hover:border-sky-400/60 transition-colors shadow-sm flex items-center justify-center bg-black/40">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/icon.svg" alt="GS Logo" width="24" height="24" className="w-full h-full object-cover" />
+            <Image
+              src="/icon.svg"
+              alt="Garv Shah Logo"
+              width={24}
+              height={24}
+              priority
+              className="w-full h-full object-cover"
+            />
           </div>
           <span className="font-semibold text-xs tracking-wider uppercase text-neutral-200 group-hover:text-white transition-colors">
             Garv Shah

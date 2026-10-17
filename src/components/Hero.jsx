@@ -61,15 +61,11 @@ export default function Hero() {
 
           {/* Narrative description */}
           <p className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-xl font-normal">
-            I build responsive, full-stack, and high-performance web applications using{' '}
-            <span className="text-neutral-200 font-medium">MERN Stack</span> (
-            <span className="text-neutral-200 font-medium">MongoDB</span>,{' '}
-            <span className="text-neutral-200 font-medium">Express</span>,{' '}
+            I build fast, responsive web applications using{' '}
             <span className="text-neutral-200 font-medium">React</span>,{' '}
-            <span className="text-neutral-200 font-medium">Node.js</span>),{' '}
-            <span className="text-neutral-200 font-medium">Next.js</span>, and{' '}
-            <span className="text-neutral-200 font-medium">Tailwind CSS</span>. With 9+ months of hands-on
-            software development experience, I care about clean architecture, snappy performance, and thoughtful UI polish.
+            <span className="text-neutral-200 font-medium">Next.js</span>, and the{' '}
+            <span className="text-neutral-200 font-medium">MERN stack</span> (MongoDB, Express, Node.js).
+            With 9+ months of hands-on software experience, I focus on clean code, great speed, and thoughtful user design.
           </p>
 
           {/* Call to Actions */}
@@ -97,7 +93,7 @@ export default function Hero() {
               <a
                 href="https://github.com/garvshah07"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Garv's GitHub"
                 className="p-2 rounded-lg bg-white/[0.03] border border-white/[0.06] hover:text-white hover:border-white/20 transition-all duration-200"
               >
@@ -106,7 +102,7 @@ export default function Hero() {
               <a
                 href="https://www.linkedin.com/in/shahgarv/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Garv's LinkedIn"
                 className="p-2 rounded-lg bg-white/[0.03] border border-white/[0.06] hover:text-sky-400 hover:border-sky-400/30 transition-all duration-200"
               >
@@ -115,7 +111,7 @@ export default function Hero() {
               <a
                 href="https://www.instagram.com/garvshxh/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Garv's Instagram"
                 className="p-2 rounded-lg bg-white/[0.03] border border-white/[0.06] hover:text-rose-400 hover:border-rose-400/30 transition-all duration-200"
               >

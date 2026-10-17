@@ -19,7 +19,7 @@ export const metadata = {
     template: "%s | Garv Shah",
   },
   description:
-    "Official portfolio of Garv Shah — Frontend & Web Developer based in Ahmedabad, Gujarat, India. Specializing in React.js, Next.js 15, Tailwind CSS, and modern JavaScript with 9+ months of hands-on experience.",
+    "Official portfolio of Garv Shah, Frontend Developer in Ahmedabad, India. Building modern, responsive web apps with React, Next.js, and Tailwind CSS.",
   keywords: [
     "Garv Shah",
 "Shah Garv",

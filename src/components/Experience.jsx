@@ -14,7 +14,7 @@ const milestones = [
     period: 'July 2025 - July 2027',
     status: 'Upcoming / Enrolled',
     description:
-      'Pursuing advanced coursework in modern software development architectures, distributed systems, and computer applications.',
+      'Studying advanced software design, distributed systems, and modern web application architecture.',
     skills: ['Software Architecture', 'Advanced Web Systems', 'Database Systems'],
   },
   {
@@ -25,7 +25,8 @@ const milestones = [
     location: 'Ahmedabad, Gujarat, IN',
     period: 'May 2025 - July 2025',
     status: 'Completed',
-    description: 'Worked as a Junior MERN Stack Developer, contributing to the development and maintenance of web applications using React.js, Next.js, Node.js, Express.js, and MongoDB. Assisted in building responsive user interfaces, developing RESTful APIs, integrating frontend and backend services, and managing database operations while collaborating with the development team to deliver efficient and scalable web solutions.',
+    description:
+      'Built and maintained web applications using React, Next.js, Node.js, Express, and MongoDB. Developed responsive UI layouts, wrote clean REST APIs, and managed database queries. Collaborated with the team to deliver reliable web features on schedule.',
     skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB'],
   },
   {
@@ -37,7 +38,7 @@ const milestones = [
     period: 'November 2024 - April 2025',
     status: 'Completed',
     description:
-      'Engineered responsive, accessible frontend user interfaces using React.js and modern CSS. Collaborated on component libraries, refactored legacy layouts, and improved web performance across mobile and desktop devices.',
+      'Built responsive user interfaces using React and modern CSS. Created reusable components, refreshed legacy layouts, and improved page speed across mobile and desktop devices.',
     skills: ['React.js', 'Responsive UI', 'Component Architecture', 'Modern CSS'],
   },
   {
@@ -49,7 +50,7 @@ const milestones = [
     period: 'August 2021 - June 2024',
     status: 'Graduated',
     description:
-      'Graduated with a comprehensive foundation in computer science, software engineering principles, web technologies, object-oriented programming, and relational databases.',
+      'Earned a bachelor’s degree in computer applications. Gained strong fundamentals in programming, web technologies, object-oriented principles, and database management.',
     skills: ['BCA', 'Computer Science', 'Web Development', 'OOP', 'SQL'],
   },
   {
@@ -61,7 +62,7 @@ const milestones = [
     period: 'February 2023 - August 2023',
     status: 'Completed',
     description:
-      'Contributed to real-world frontend web applications using React.js. Created reusable UI components, integrated RESTful APIs, and maintained clean version control workflows in a collaborative team.',
+      'Contributed to frontend web projects using React. Built modular UI components, integrated REST APIs, and managed version control workflows with Git in a team environment.',
     skills: ['React.js', 'Frontend Development', 'API Integration', 'Git'],
   },
 ];

@@ -11,7 +11,7 @@ const faqItems = [
     shortAnswer:
       'Garv Shah is a MERN Stack and Frontend Developer based in Ahmedabad, Gujarat, India, with 9+ months of hands-on software development experience.',
     detailedAnswer:
-      'Garv specializes in building fast, scalable, and responsive web applications using both full-stack MERN (MongoDB, Express.js, React.js, Node.js) and the modern Next.js ecosystem. He emphasizes clean component architecture, reliable state management, and tactile user experience design.',
+      'Garv specializes in building fast, responsive web applications using full-stack MERN (MongoDB, Express, React, Node.js) and Next.js. He focuses on clean code, solid state management, and smooth user design.',
     highlights: [
       'Full-Stack MERN (MongoDB, Express, React, Node.js)',
       'Specialized in Next.js 15 & React 19',
@@ -25,7 +25,7 @@ const faqItems = [
     shortAnswer:
       'Garv’s primary stack consists of the MERN Stack (MongoDB, Express.js, React.js, Node.js), Next.js 15, Tailwind CSS, and modern JavaScript (ES6+).',
     detailedAnswer:
-      'Garv builds complete web solutions from database modeling in MongoDB and REST API endpoints in Express/Node to interactive frontend interfaces with React, Next.js, and Tailwind CSS. He utilizes Git and GitHub for version control, Figma for design translation, and Vercel for continuous deployment.',
+      'Garv builds complete web solutions. He models data in MongoDB, creates REST APIs with Express and Node.js, and builds clean user interfaces with React, Next.js, and Tailwind CSS. He uses Git for version control and Vercel for fast deployments.',
     highlights: [
       'MERN Stack: MongoDB, Express.js, React.js, Node.js',
       'Frontend: Next.js 15, Tailwind CSS, HTML5, CSS3, JavaScript',
@@ -38,7 +38,7 @@ const faqItems = [
     shortAnswer:
       'Garv graduated with a Bachelor of Computer Applications (BCA) and is pursuing his Master of Science in Information Technology (MSC-IT).',
     detailedAnswer:
-      'He completed his BCA at Silver Oak University (2021–2024) and is enrolled in the MSC-IT program at GLS University in Ahmedabad (2025–2027). His professional experience includes a Junior Software Developer role in Ahmedabad and a React Developer Internship at Codage Habitation.',
+      'He completed his BCA at Silver Oak University (2021–2024) and is studying MSC-IT at GLS University in Ahmedabad (2025–2027). His professional experience includes a Junior Software Developer role in Ahmedabad and a React Developer internship at Codage Habitation.',
     highlights: [
       'MSC-IT @ GLS University (July 2025 – July 2027)',
       'Junior Software Developer @ Ahmedabad (Nov 2024 – July 2025)',
@@ -52,7 +52,7 @@ const faqItems = [
     shortAnswer:
       'Yes, Garv Shah is actively open and available for junior MERN stack developer, frontend developer, and web developer roles.',
     detailedAnswer:
-      'He is available for full-time employment, contract roles, and select freelance web development projects. Garv is ready to contribute remotely to distributed teams worldwide, or work on-site in Ahmedabad with openness to relocation across India.',
+      'He is available for full-time jobs, contracts, and select freelance web development projects. Garv is ready to work remotely with global teams or on-site in Ahmedabad, and is open to relocating across India.',
     highlights: [
       'Open to Full-Time, Contract, & Freelance Opportunities',
       'Available for Remote Work (worldwide) and On-site (Ahmedabad / Relocation)',
@@ -65,7 +65,7 @@ const faqItems = [
     shortAnswer:
       'You can reach Garv directly via email at garv8890@gmail.com or by using the direct message form on this portfolio.',
     detailedAnswer:
-      'Garv regularly checks his inbox and responds to genuine inquiries. You can also connect with him professionally on LinkedIn or explore his open-source code repositories and commits on GitHub.',
+      'Garv regularly checks his inbox and responds to genuine inquiries. You can also connect with him on LinkedIn or explore his open-source code and commits on GitHub.',
     highlights: [
       'Direct Email: garv8890@gmail.com',
       'LinkedIn: linkedin.com/in/shahgarv',

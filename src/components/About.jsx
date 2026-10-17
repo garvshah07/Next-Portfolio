@@ -30,17 +30,17 @@ export default function About() {
     {
       icon: <FiCode className="w-5 h-5 text-sky-400" />,
       title: 'Clean Architecture',
-      description: 'I write modular, readable React & Next.js code that is easy to maintain, debug, and scale.',
+      description: 'I write clean, modular React and Next.js code that is easy to read, test, and maintain.',
     },
     {
       icon: <FiLayers className="w-5 h-5 text-indigo-400" />,
       title: 'Responsive & Accessible',
-      description: 'Every interface is engineered from mobile-first to widescreen displays with keyboard and screen accessibility in mind.',
+      description: 'Every screen is built mobile-first. I ensure layouts look great on phones, tablets, and large displays.',
     },
     {
       icon: <FiZap className="w-5 h-5 text-amber-400" />,
       title: 'Speed & Interaction',
-      description: 'Smooth 60fps micro-interactions, low bundle footprints, and instant page transitions using modern tooling.',
+      description: 'I build smooth animations and quick page transitions while keeping file sizes lightweight.',
     },
   ];
 
@@ -66,19 +66,18 @@ export default function About() {
           <div className="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.08] space-y-4 backdrop-blur-sm">
             <h3 className="text-xl font-semibold text-white">My Journey into Web Development</h3>
             <p>
-              I am <strong className="text-white font-medium">Garv Shah</strong>, a MERN Stack &amp; Frontend developer based in{' '}
-              <span className="text-sky-400">Ahmedabad, Gujarat</span>. Over the past 9+ months of hands-on software development,
-              I have channeled my energy into mastering full-stack MERN (MongoDB, Express.js, React.js, Node.js), Next.js, and the modern JavaScript ecosystem.
+              I am <strong className="text-white font-medium">Garv Shah</strong>, a Frontend and MERN Stack developer based in{' '}
+              <span className="text-sky-400">Ahmedabad, Gujarat</span>. Over the past 9+ months,
+              I have built web apps using React, Next.js, Node.js, and modern JavaScript. I enjoy creating practical digital tools that make a real difference for users.
             </p>
             <p>
-              My academic background in computer applications and information technology (BCA at Silver Oak University and
-              pursuing MSC-IT at GLS University) gave me solid foundations in programming, database structures, and systems.
-              However, my real spark ignited when building interfaces that live on the web — turning Figma thoughts and clean
-              ideas into responsive, interactive realities.
+              I hold a BCA degree from Silver Oak University and am studying for an MSC-IT at GLS University.
+              My coursework gave me strong roots in computer science, logic, and databases.
+              My real passion is building products for the web. I turn modern designs into fast, clean, and responsive web apps.
             </p>
             <p>
-              Rather than chasing buzzwords, I focus on what truly matters to users and engineering teams: code that doesn&apos;t break,
-              interfaces that load immediately, and intuitive navigation that feels effortless.
+              I focus on what matters most to users and teams. That means code that runs smoothly,
+              pages that load quickly, and navigation that feels natural.
             </p>
           </div>
 

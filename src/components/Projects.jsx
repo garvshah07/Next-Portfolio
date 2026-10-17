@@ -14,7 +14,7 @@ const projectsData = [
     categoryLabel: 'AI Extension',
     featured: true,
     description:
-      'AI-powered browser extension that scans, extracts, and summarizes complex Terms of Service and Privacy Policies before users accept them, powered by Groq LLM SDK and PDF.js.',
+      'AI-powered browser extension that scans and summarizes Terms of Service and Privacy Policies before users accept them. Built with React, Groq LLM SDK, and PDF.js.',
     tags: ['React', 'Groq SDK (LLM)', 'PDF.js', 'Vite', 'Browser Extension'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://github.com/garvshah07/Agreewise',
@@ -27,7 +27,7 @@ const projectsData = [
     categoryLabel: 'Frontend / UI',
     featured: true,
     description:
-      'Modern web platform engineered with Next.js, TypeScript, Radix UI primitives, Framer Motion animations, and Tailwind CSS for interactive digital experiences.',
+      'Interactive web platform built with Next.js, TypeScript, Radix UI primitives, Framer Motion animations, and Tailwind CSS.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Radix UI', 'Framer Motion'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://github.com/garvshah07/pixelcurl',
@@ -40,7 +40,7 @@ const projectsData = [
     categoryLabel: 'AI / Tool',
     featured: false,
     description:
-      'Support routing and triage application leveraging AI models to automatically classify, prioritize, and route incoming customer tickets for accelerated resolution.',
+      'Support triage application using AI models to automatically classify, prioritize, and route customer tickets for rapid resolution.',
     tags: ['React', 'JavaScript', 'AI Classification', 'Vercel Deployment'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://ai-customer-message-triage.vercel.app',
@@ -53,7 +53,7 @@ const projectsData = [
     categoryLabel: 'Capstone',
     featured: false,
     description:
-      'Capstone web application connecting book enthusiasts to discover, catalog, review, and exchange literature with a responsive, modern UI.',
+      'Capstone web application connecting book enthusiasts to discover, catalog, review, and exchange books with a responsive UI.',
     tags: ['React', 'JavaScript', 'State Management', 'Responsive UI', 'Vercel'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://book-bridge-sage.vercel.app',
@@ -66,7 +66,7 @@ const projectsData = [
     categoryLabel: 'Frontend',
     featured: false,
     description:
-      'Online shopping storefront featuring dynamic product catalog browsing, responsive grid layouts, category filtering, and shopping cart state management.',
+      'Online shopping storefront with product catalog browsing, responsive grid layouts, category filtering, and shopping cart state management.',
     tags: ['React', 'JavaScript', 'CSS Grid', 'Shopping Cart', 'Vercel'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://github.com/garvshah07/ecommerce',
@@ -79,7 +79,7 @@ const projectsData = [
     categoryLabel: 'API / Frontend',
     featured: false,
     description:
-      'Interactive world geography exploration web app consuming the REST Countries API with real-time country search, region filters, border links, and dark mode.',
+      'Interactive world geography exploration web app consuming the REST Countries API with real-time search, region filters, and dark mode.',
     tags: ['React', 'Vite', 'REST API Integration', 'Responsive Design'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://github.com/garvshah07/rest-country',
@@ -92,7 +92,7 @@ const projectsData = [
     categoryLabel: 'GraphQL',
     featured: false,
     description:
-      'Media exploration application built with React, TypeScript, Apollo Client, and GraphQL for declarative data querying and type-safe state handling.',
+      'Movie and media discovery application built with React, TypeScript, Apollo Client, and GraphQL for smooth data fetching.',
     tags: ['React', 'TypeScript', 'GraphQL', 'Apollo Client', 'Vite'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: 'https://github.com/garvshah07/film-app',
@@ -105,7 +105,7 @@ const projectsData = [
     categoryLabel: 'Frontend',
     featured: true,
     description:
-      'Personal developer portfolio engineered with Next.js 15 App Router, React 19, Tailwind CSS, Framer Motion, and comprehensive SEO / GEO / AEO schema optimization.',
+      'Personal developer portfolio engineered with Next.js 15 App Router, React 19, Tailwind CSS, Framer Motion, and rich SEO metadata.',
     tags: ['Next.js 15', 'React 19', 'Tailwind CSS', 'Framer Motion', 'SEO/GEO'],
     imageUrl: '/images/card-project/card.jpg',
     demoUrl: '#hero',
@@ -176,10 +176,10 @@ export default function Projects() {
               <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-neutral-950 border-b border-white/[0.06]">
                 <Image
                   src={project.imageUrl}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-300"
+                  alt={`${project.title} preview`}
+                  width={600}
+                  height={340}
+                  className="w-full h-full object-cover opacity-75 group-hover:opacity-90 group-hover:scale-105 transition-all duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#090a0f] via-transparent to-transparent opacity-60" />
 
@@ -221,24 +221,26 @@ export default function Projects() {
 
                   {/* Actions */}
                   <div className="flex items-center gap-3">
-                    <Link
-                      href={project.demoUrl}
-                      target={project.demoUrl.startsWith('http') ? '_blank' : '_self'}
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white text-neutral-950 hover:bg-neutral-200 active:scale-[0.98] transition-all cursor-pointer"
-                    >
-                      <span>View Live</span>
-                      <FiArrowUpRight className="text-sm" />
-                    </Link>
+                    {project.demoUrl && project.demoUrl !== project.githubUrl && (
+                      <Link
+                        href={project.demoUrl}
+                        target={project.demoUrl.startsWith('http') ? '_blank' : '_self'}
+                        rel={project.demoUrl.startsWith('http') ? 'nofollow noopener noreferrer' : undefined}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white text-neutral-950 hover:bg-neutral-200 active:scale-[0.98] transition-all cursor-pointer"
+                      >
+                        <span>View Live</span>
+                        <FiArrowUpRight className="text-sm" />
+                      </Link>
+                    )}
 
                     <a
                       href={project.githubUrl}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-medium bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-neutral-300 hover:text-white transition-all cursor-pointer"
                     >
                       <FiGithub className="text-sm" />
-                      <span>Source Code</span>
+                      <span>{project.demoUrl === project.githubUrl ? 'View on GitHub' : 'Source Code'}</span>
                     </a>
                   </div>
                 </div>
