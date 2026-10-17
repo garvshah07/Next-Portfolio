@@ -25,11 +25,11 @@ export default function Contact() {
           <span className="w-6 h-px bg-sky-400/50" />
           <span>Get in Touch</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Let&apos;s build something great together.
-        </h2>
+        </h3>
         <p className="text-base text-neutral-400 max-w-2xl">
-          Whether you have a junior developer opportunity, a project to discuss, or just want to connect, my inbox is open.
+          Have a dev role or a project in mind? Reach out today. My inbox is always open.
         </p>
       </div>
 
@@ -43,12 +43,12 @@ export default function Contact() {
               Available for Opportunities
             </div>
 
-            <h3 className="text-lg font-bold text-white">
+            <h4 className="text-lg font-bold text-white">
               Open for MERN Stack &amp; Frontend Roles
-            </h3>
+            </h4>
 
             <p className="text-sm text-neutral-300 leading-relaxed">
-              I am actively seeking junior MERN stack and frontend developer roles. Ready to work on-site in Ahmedabad, relocate across India, or contribute remotely worldwide.
+              I am open for junior MERN and frontend roles. I can work on-site in Ahmedabad, relocate across India, or work remotely worldwide.
             </p>
 
             {/* 1-Click Copy Box */}
@@ -131,7 +131,7 @@ export default function Contact() {
             className="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.08] backdrop-blur-sm space-y-5"
           >
             <div className="space-y-1">
-              <h3 className="text-xl font-bold text-white">Send a Direct Message</h3>
+              <h4 className="text-xl font-bold text-white">Send a Direct Message</h4>
               <p className="text-xs sm:text-sm text-neutral-400">
                 Leave your email and thoughts. Messages are forwarded straight to my personal inbox.
               </p>

@@ -52,9 +52,9 @@ export default function About() {
           <span className="w-6 h-px bg-sky-400/50" />
           <span>About Me</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           A developer focused on craft, usability, and genuine curiosity.
-        </h2>
+        </h3>
         <p className="text-base text-neutral-400 max-w-2xl">
           Here is a genuine look into my background, what drives me every day, and how I build for the web.
         </p>
@@ -64,7 +64,7 @@ export default function About() {
         {/* Left Column: Narrative & Human Journey */}
         <div className="lg:col-span-7 space-y-6 text-neutral-300 text-base leading-relaxed">
           <div className="p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.08] space-y-4 backdrop-blur-sm">
-            <h3 className="text-xl font-semibold text-white">My Journey into Web Development</h3>
+            <h4 className="text-xl font-semibold text-white">My Journey into Web Development</h4>
             <p>
               I am <strong className="text-white font-medium">Garv Shah</strong>, a Frontend and MERN Stack developer based in{' '}
               <span className="text-sky-400">Ahmedabad, Gujarat</span>. Over the past 9+ months,
@@ -91,7 +91,7 @@ export default function About() {
                 <div className="p-2 rounded-lg bg-white/[0.04] w-fit border border-white/[0.05]">
                   {pillar.icon}
                 </div>
-                <h4 className="text-sm font-semibold text-white">{pillar.title}</h4>
+                <h5 className="text-sm font-semibold text-white">{pillar.title}</h5>
                 <p className="text-xs text-neutral-400 leading-normal">{pillar.description}</p>
               </div>
             ))}
@@ -128,7 +128,7 @@ export default function About() {
               <FiHeart className="text-rose-400" />
               <span>Beyond the Screen</span>
             </div>
-            <h4 className="text-sm font-semibold text-white">What I love when not coding:</h4>
+            <h5 className="text-sm font-semibold text-white">What I love when not coding:</h5>
             <div className="space-y-2 text-xs text-neutral-300">
               <div className="flex items-start gap-2">
                 <FiCheckCircle className="w-3.5 h-3.5 text-sky-400 mt-0.5 shrink-0" />

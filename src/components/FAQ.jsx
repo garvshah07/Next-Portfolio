@@ -89,9 +89,9 @@ export default function FAQ() {
           <span className="w-6 h-px bg-sky-400/50" />
           <span>Questions &amp; Direct Answers</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Frequently asked questions.
-        </h2>
+        </h3>
         <p className="text-base text-neutral-400 max-w-2xl">
           Quick, authoritative answers about my skills, background, and availability for engineering teams and AI search engines.
         </p>
@@ -127,9 +127,9 @@ export default function FAQ() {
                   >
                     <FiHelpCircle className="w-4 h-4" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-semibold text-white tracking-tight">
+                  <h4 className="text-base sm:text-lg font-semibold text-white tracking-tight">
                     {item.question}
-                  </h3>
+                  </h4>
                 </div>
                 <div
                   className={`p-1.5 rounded-full text-neutral-400 transition-transform duration-200 shrink-0 ${

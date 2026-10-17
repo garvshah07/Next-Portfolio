@@ -14,8 +14,8 @@ const milestones = [
     period: 'July 2025 - July 2027',
     status: 'Upcoming / Enrolled',
     description:
-      'Studying advanced software design, distributed systems, and modern web application architecture.',
-    skills: ['Software Architecture', 'Advanced Web Systems', 'Database Systems'],
+      'Studying software design, systems, and modern web apps.',
+    skills: ['Software Design', 'Web Systems', 'Databases'],
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const milestones = [
     period: 'May 2025 - July 2025',
     status: 'Completed',
     description:
-      'Built and maintained web applications using React, Next.js, Node.js, Express, and MongoDB. Developed responsive UI layouts, wrote clean REST APIs, and managed database queries. Collaborated with the team to deliver reliable web features on schedule.',
+      'Built web apps using React, Next.js, and Node.js. Made fast UI screens, wrote REST APIs, and managed data queries. Partnered with the team to deliver features on time.',
     skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'MongoDB'],
   },
   {
@@ -38,8 +38,8 @@ const milestones = [
     period: 'November 2024 - April 2025',
     status: 'Completed',
     description:
-      'Built responsive user interfaces using React and modern CSS. Created reusable components, refreshed legacy layouts, and improved page speed across mobile and desktop devices.',
-    skills: ['React.js', 'Responsive UI', 'Component Architecture', 'Modern CSS'],
+      'Built responsive user interfaces with React and CSS. Created clean components and improved page speed for all devices.',
+    skills: ['React.js', 'Responsive UI', 'Clean Code', 'Modern CSS'],
   },
   {
     id: 4,
@@ -50,8 +50,8 @@ const milestones = [
     period: 'August 2021 - June 2024',
     status: 'Graduated',
     description:
-      'Earned a bachelor’s degree in computer applications. Gained strong fundamentals in programming, web technologies, object-oriented principles, and database management.',
-    skills: ['BCA', 'Computer Science', 'Web Development', 'OOP', 'SQL'],
+      'Earned a degree in computer applications. Learned web development, programming, and database tools.',
+    skills: ['BCA', 'Computer Science', 'Web Development', 'SQL'],
   },
   {
     id: 5,
@@ -62,8 +62,8 @@ const milestones = [
     period: 'February 2023 - August 2023',
     status: 'Completed',
     description:
-      'Contributed to frontend web projects using React. Built modular UI components, integrated REST APIs, and managed version control workflows with Git in a team environment.',
-    skills: ['React.js', 'Frontend Development', 'API Integration', 'Git'],
+      'Worked on frontend web projects with React. Built modular components and used Git with a team.',
+    skills: ['React.js', 'Frontend Dev', 'REST APIs', 'Git'],
   },
 ];
 
@@ -83,9 +83,9 @@ export default function Experience() {
           <span className="w-6 h-px bg-sky-400/50" />
           <span>Track Record</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Experience & Education.
-        </h2>
+        </h3>
         <p className="text-base text-neutral-400 max-w-2xl">
           A transparent chronological journey of my academic background and hands-on software development roles.
         </p>
@@ -153,9 +153,9 @@ export default function Experience() {
 
                 {/* Role and Organization */}
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-sky-300 transition-colors">
+                  <h4 className="text-lg sm:text-xl font-bold text-white group-hover:text-sky-300 transition-colors">
                     {item.role}
-                  </h3>
+                  </h4>
                   <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-neutral-400 mt-1">
                     <span className="text-neutral-200 font-medium">{item.organization}</span>
                     <span className="text-neutral-600">&bull;</span>
@@ -178,7 +178,7 @@ export default function Experience() {
                       key={i}
                       className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-white/[0.03] border border-white/[0.06] text-neutral-300"
                     >
-                      {skill}
+                      {skill}<span className="sr-only">.</span>
                     </span>
                   ))}
                 </div>

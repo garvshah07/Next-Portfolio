@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 import { FiArrowDown, FiMail, FiGithub, FiLinkedin, FiInstagram, FiCode, FiMapPin, FiZap } from 'react-icons/fi';
 
 const quickStats = [
-  { label: 'Hands-on Experience', value: '9+ Months' },
-  { label: 'Core Specialization', value: 'MERN & Next.js' },
-  { label: 'Location', value: 'Ahmedabad, IN' },
-  { label: 'Availability', value: 'Open for Roles' },
+  { label: 'Hands-on Experience.', value: '9+ Months' },
+  { label: 'Core Tech Stack.', value: 'MERN & Next.js' },
+  { label: 'Current City.', value: 'Ahmedabad, IN' },
+  { label: 'Work Status.', value: 'Open for Roles' },
 ];
 
 export default function Hero() {
@@ -54,18 +54,18 @@ export default function Hero() {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white">
               Garv Shah<span className="text-sky-400">.</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-neutral-300 font-medium pt-1">
+            <h2 className="text-xl sm:text-2xl text-neutral-300 font-medium pt-1">
               MERN Stack &amp; Frontend Developer crafting fast, human-centered digital experiences.
-            </p>
+            </h2>
           </div>
 
           {/* Narrative description */}
           <p className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-xl font-normal">
-            I build fast, responsive web applications using{' '}
+            I build fast web apps using{' '}
             <span className="text-neutral-200 font-medium">React</span>,{' '}
             <span className="text-neutral-200 font-medium">Next.js</span>, and the{' '}
-            <span className="text-neutral-200 font-medium">MERN stack</span> (MongoDB, Express, Node.js).
-            With 9+ months of hands-on software experience, I focus on clean code, great speed, and thoughtful user design.
+            <span className="text-neutral-200 font-medium">MERN stack</span>.
+            I have 9+ months of dev experience. I care about clean code, quick load speeds, and simple UI design.
           </p>
 
           {/* Call to Actions */}
@@ -152,7 +152,7 @@ export default function Hero() {
             </div>
 
             {/* Code / Developer Object Display */}
-            <div className="font-mono text-xs sm:text-sm text-neutral-300 leading-relaxed space-y-1.5 select-none">
+            <div aria-hidden="true" className="font-mono text-xs sm:text-sm text-neutral-300 leading-relaxed space-y-1.5 select-none">
               <p className="text-neutral-500">{"// Developer snapshot"}</p>
               <p>
                 <span className="text-rose-400">const</span>{' '}

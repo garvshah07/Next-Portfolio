@@ -129,9 +129,9 @@ export default function Projects() {
           <span className="w-6 h-px bg-sky-400/50" />
           <span>Selected Work</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Real projects from my GitHub.
-        </h2>
+        </h3>
         <p className="text-base text-neutral-400 max-w-2xl">
           A showcase of real applications, AI extensions, and web tools I have built and published on GitHub.
         </p>
@@ -198,9 +198,9 @@ export default function Projects() {
               {/* Content Area */}
               <div className="p-6 flex-1 flex flex-col justify-between space-y-6">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-white group-hover:text-sky-300 transition-colors">
+                  <h4 className="text-xl font-bold text-white group-hover:text-sky-300 transition-colors">
                     {project.title}
-                  </h3>
+                  </h4>
                   <p className="text-sm text-neutral-400 leading-relaxed">
                     {project.description}
                   </p>
@@ -214,7 +214,7 @@ export default function Projects() {
                         key={i}
                         className="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-white/[0.03] border border-white/[0.06] text-neutral-400"
                       >
-                        {tag}
+                        {tag}<span className="sr-only">.</span>
                       </span>
                     ))}
                   </div>
@@ -253,7 +253,7 @@ export default function Projects() {
       {/* GitHub Callout */}
       <div className="mt-12 p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="space-y-1 text-center sm:text-left">
-          <h4 className="text-sm font-semibold text-white">Looking for more code repositories?</h4>
+          <h5 className="text-sm font-semibold text-white">Looking for more code repositories?</h5>
           <p className="text-xs text-neutral-400">
             Explore active commits, experimentation branches, and UI components on my GitHub.
           </p>

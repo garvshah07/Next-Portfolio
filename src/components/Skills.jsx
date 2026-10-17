@@ -33,7 +33,7 @@ const skills = [
     category: 'frontend',
     icon: SiNextdotjs,
     level: 'Core Framework',
-    description: 'App Router, Server Components, SEO optimization, and static/dynamic rendering.',
+    description: 'I build fast web apps using the App Router. It helps pages load fast and rank well.',
     color: 'hover:text-white',
     badge: 'Daily Use',
   },
@@ -41,8 +41,8 @@ const skills = [
     name: 'React.js',
     category: 'frontend',
     icon: SiReact,
-    level: 'Component Architecture',
-    description: 'Hooks, state management, component lifecycle, reusable UI building.',
+    level: 'Component Library',
+    description: 'I build clean, reusable components. They are easy to read, test, and maintain.',
     color: 'hover:text-sky-400',
     badge: 'Core MERN',
   },
@@ -51,7 +51,7 @@ const skills = [
     category: 'frontend',
     icon: SiJavascript,
     level: 'Language Core',
-    description: 'Modern syntax, async/await, DOM manipulation, functional programming patterns.',
+    description: 'I write clean, modern code. I handle async data and dynamic web page updates.',
     color: 'hover:text-amber-400',
     badge: 'Foundational',
   },
@@ -59,8 +59,8 @@ const skills = [
     name: 'Tailwind CSS',
     category: 'frontend',
     icon: SiTailwindcss,
-    level: 'Utility-first Styling',
-    description: 'Responsive layouts, fluid typography, dark mode systems, custom theme configuration.',
+    level: 'Utility Styling',
+    description: 'I build fast styles for phone and desktop screens. Includes clean dark mode.',
     color: 'hover:text-cyan-400',
     badge: 'Daily Use',
   },
@@ -69,7 +69,7 @@ const skills = [
     category: 'frontend',
     icon: SiHtml5,
     level: 'Web Structure',
-    description: 'Accessible semantic markup, SEO best practices, modern form controls.',
+    description: 'I write clean HTML tags for clear structure, accessibility, and strong SEO.',
     color: 'hover:text-orange-500',
     badge: 'Foundational',
   },
@@ -77,8 +77,8 @@ const skills = [
     name: 'CSS3 & Animations',
     category: 'frontend',
     icon: SiCss3,
-    level: 'Styling & Micro-interactions',
-    description: 'Flexbox, CSS Grid, keyframes, transitions, responsive mobile breakpoints.',
+    level: 'Layout & Styling',
+    description: 'I use Flexbox and CSS Grid to create smooth layouts and clean web animations.',
     color: 'hover:text-blue-500',
     badge: 'Core',
   },
@@ -89,7 +89,7 @@ const skills = [
     category: 'backend',
     icon: SiNodedotjs,
     level: 'Runtime Environment',
-    description: 'Server-side JavaScript runtime, RESTful API architecture, npm ecosystem, asynchronous event loop.',
+    description: 'I run server apps and build REST APIs with fast, asynchronous event loops.',
     color: 'hover:text-emerald-500',
     badge: 'Core MERN',
   },
@@ -98,7 +98,7 @@ const skills = [
     category: 'backend',
     icon: SiExpress,
     level: 'Server Framework',
-    description: 'RESTful API routing, middleware pipeline, request validation, backend architecture.',
+    description: 'I create web servers, route API requests, and validate data with middleware.',
     color: 'hover:text-neutral-200',
     badge: 'Core MERN',
   },
@@ -106,8 +106,8 @@ const skills = [
     name: 'MongoDB',
     category: 'backend',
     icon: SiMongodb,
-    level: 'NoSQL Database',
-    description: 'Document-oriented database schemas, CRUD operations, aggregation pipelines, Mongoose models.',
+    level: 'Database',
+    description: 'I store and query app data. I design clean schemas and write CRUD operations.',
     color: 'hover:text-green-500',
     badge: 'Core MERN',
   },
@@ -118,7 +118,7 @@ const skills = [
     category: 'tools',
     icon: SiGit,
     level: 'Source Control',
-    description: 'Branching, merging, commit discipline, resolving conflicts.',
+    description: 'I track code changes, create git branches, and merge code with the team.',
     color: 'hover:text-rose-500',
     badge: 'Daily Use',
   },
@@ -127,7 +127,7 @@ const skills = [
     category: 'tools',
     icon: SiGithub,
     level: 'Collaboration',
-    description: 'Pull requests, code reviews, repository management, releases.',
+    description: 'I share code repositories, review pull requests, and collaborate with teams.',
     color: 'hover:text-white',
     badge: 'Daily Use',
   },
@@ -136,7 +136,7 @@ const skills = [
     category: 'tools',
     icon: SiVercel,
     level: 'Cloud Platform',
-    description: 'Continuous deployment, preview branches, production hosting, DNS config.',
+    description: 'I deploy web apps to the cloud with instant previews and live domains.',
     color: 'hover:text-white',
     badge: 'Production',
   },
@@ -144,8 +144,8 @@ const skills = [
     name: 'Figma to Code',
     category: 'tools',
     icon: SiFigma,
-    level: 'Design Handoff',
-    description: 'Translating design specifications, color palettes, and spacing tokens into pixel-clean code.',
+    level: 'Design to Web',
+    description: 'I turn UI design files into clean, responsive web code that works smoothly.',
     color: 'hover:text-purple-400',
     badge: 'Workflow',
   },
@@ -167,9 +167,9 @@ export default function Skills() {
           <span className="w-6 h-px bg-sky-400/50" />
           <span>Technical Skills</span>
         </div>
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+        <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
           Technologies I work with daily.
-        </h2>
+        </h3>
         <p className="text-base text-neutral-400 max-w-2xl">
           An honest overview of my technical stack, focused on frontend excellence and modern web development standards.
         </p>
@@ -216,9 +216,9 @@ export default function Skills() {
                       <Icon className={`w-6 h-6 text-neutral-300 transition-colors ${skill.color}`} />
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold text-white group-hover:text-sky-300 transition-colors">
+                      <h4 className="text-sm font-semibold text-white group-hover:text-sky-300 transition-colors">
                         {skill.name}
-                      </h3>
+                      </h4>
                       <p className="text-[11px] font-mono text-neutral-400">{skill.level}</p>
                     </div>
                   </div>
