@@ -109,7 +109,7 @@ export default function Hero() {
                 <FiLinkedin className="w-4 h-4" />
               </a>
               <a
-                href="https://www.instagram.com/garvshxh/"
+                href="https://www.instagram.com/garv.shah_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Garv's Instagram"
