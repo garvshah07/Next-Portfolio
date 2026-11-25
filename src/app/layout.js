@@ -75,7 +75,7 @@ export const metadata = {
     title: "Garv Shah — Frontend & Web Developer",
     description:
       "Frontend & Web Developer in Ahmedabad crafting fast, responsive, and human-centered web experiences with React, Next.js, and Tailwind CSS.",
-    creator: "@grv_sh7",
+    creator: "@garv.shah_",
     images: ["/images/card-project/card.jpg"],
   },
   robots: {
